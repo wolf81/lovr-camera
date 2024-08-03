@@ -2,8 +2,6 @@
 
 A camera module for [LÖVR](https://lovr.org) based on the [FPS Controls](https://lovr.org/docs/Flatscreen/FPS_Controls) example code.
 
-_**PLEASE NOTE:**_ this module requires the lovr-mouse library, which is included as a submodule. So after downloading this repo, be sure to call:
-
 ```bash
 % git submodule init
 % git submodule update
