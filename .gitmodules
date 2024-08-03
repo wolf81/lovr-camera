@@ -1,0 +1,3 @@
+[submodule "lib/lovr-mouse"]
+	path = lib/lovr-mouse
+	url = https://github.com/wolf81/lovr-mouse.git
