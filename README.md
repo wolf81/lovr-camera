@@ -2,11 +2,6 @@
 
 A camera module for [LÖVR](https://lovr.org) based on the [FPS Controls](https://lovr.org/docs/Flatscreen/FPS_Controls) example code.
 
-```bash
-% git submodule init
-% git submodule update
-```
-
 # Usage
 
 See the included `main.lua` file for a working example, but in short:
@@ -35,3 +30,7 @@ function lovr.draw(pass)
     end)
 end
 ```
+
+# Additional
+
+Please note, by default mouse will not be hidden. In order to hide the mouse, disable the `headset` module of LÖVR. The example project disables the headset module using the `conf.lua` configuration file.

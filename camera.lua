@@ -1,3 +1,5 @@
+local PATH = (...):match('(.-)[^%.]+$') 
+
 local Camera = {}
 
 Camera.new = function()
@@ -47,7 +49,7 @@ Camera.new = function()
 
     local init = function(self)
         if not lovr.mouse then
-            lovr.mouse = require 'lib.lovr-mouse.lovr-mouse'
+            lovr.mouse = require(PATH .. 'lib.lovr-mouse.lovr-mouse')
         end
 
         lovr.mouse.setRelativeMode(true)
