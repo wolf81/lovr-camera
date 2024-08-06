@@ -2,7 +2,7 @@
 local Camera = require 'Camera'
 
 -- create new instance
-local camera = Camera()
+local camera = Camera(0, 1.7, 0)
 
 function lovr.load(args)
     -- configure camera, this will allow mouse turning
@@ -22,4 +22,10 @@ function lovr.draw(pass)
         pass:setColor(0xffffff)
         pass:plane(0, 0, 0, 10, 10, math.pi / 2, 1, 0, 0)
     end)
+end
+
+function lovr.keypressed(key)
+    if key == 'escape' then
+        lovr.event.quit()
+    end
 end
